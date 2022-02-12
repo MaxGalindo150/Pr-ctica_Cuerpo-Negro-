@@ -15,14 +15,14 @@ def run():
     print(results)
 
 
-    x = np.linspace(0,12,100)   
+    x = np.linspace(0,13,100)   
     
    
     fig, ax = plt.subplots()
     ax.scatter(df['T'], df['E'], marker = 'o', color='red', label="Puntos Exp.")
     ax.plot(x,f1(x,results[0],results[1]), label="$E_{T}(T) = -553.28 + 109.87 T$", linewidth=2)
-    plt.xlim(3,15)
-    plt.ylim(-10,850)
+    plt.xlim(2,15)
+    plt.ylim(-50,850)
     plt.legend(loc='upper left')
     plt.xlabel("T [kK]", fontsize='large', fontweight='bold')
     plt.ylabel("E [MW/m²]", fontsize='large', fontweight='bold')
