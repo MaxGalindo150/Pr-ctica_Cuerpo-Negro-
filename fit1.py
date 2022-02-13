@@ -20,7 +20,7 @@ def run():
    
     fig, ax = plt.subplots()
     ax.scatter(df['T'], df['E'], marker = 'o', color='red', label="Puntos Exp.")
-    ax.plot(x,f1(x,results[0],results[1]), label="$E_{T}(T) = -553.28 + 109.87 T$", linewidth=2)
+    ax.plot(x,f1(x,results[0],results[1]), label="Ajuste Grd. 1", linewidth=2)
     plt.xlim(2,15)
     plt.ylim(-50,850)
     plt.legend(loc='upper left')
